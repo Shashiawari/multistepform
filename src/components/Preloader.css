@@ -1,0 +1,42 @@
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.805); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Set a high z-index to ensure the preloader is behind other content */
+  }
+  
+  .preloader-spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Thicker border */
+    border-left-color: #f4af36; /* Dark spinner color */
+    border-radius: 50%;
+    width: 80px; /* Increase spinner size */
+    height: 80px; /* Increase spinner size */
+    animation: spin 1s linear infinite; /* Rotate animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .te {
+    font-weight: 400;
+    position: absolute;
+    top: 60%; /* Align the text vertically in the middle */
+    left: 50%; /* Align the text horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+    text-align: center; /* Center the text within its container */
+    font-family: "Rubik"; /* Set the desired font family */
+    z-index: 1000; /* Ensure the text is on top of the preloader */
+  }
+  

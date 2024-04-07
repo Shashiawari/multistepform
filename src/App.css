@@ -1,0 +1,79 @@
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+.img1 {
+  position: absolute;
+  height: 500px;
+  left: 80%;
+  top: 60%;
+  z-index: -1;
+  animation: clockwise 20s linear infinite;
+}
+
+
+.img2 {
+  z-index: -2;
+  position: absolute;
+  width: 3518px;
+  height: 1884px;
+  left: -1003px;
+  top: -105px;
+}
+
+.img3 {
+  z-index: -2;
+  position: absolute;
+  width: 2158px;
+  height: 2482px;
+  left: 268px;
+  top: -1346px;
+}
+
+.img4 {
+  z-index: -1;
+  position: absolute;
+
+  width: 1339.72px;
+  height: 1305.97px;
+  left: -20%;
+  bottom: 30%;
+  animation: anticlockwise 10s linear infinite;
+  transform: rotate(-59.26deg);
+}
+@media (max-width: 500px) {
+  .img4 {
+    left: -70%;
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  100% {
+    transform: rotate(
+      360deg
+    ); /* End rotation at 360 degrees (one full rotation) */
+  }
+}
+
+@keyframes anticlockwise {
+  0% {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+  100% {
+    transform: rotate(
+      -360deg
+    ); /* End rotation at -360 degrees (one full rotation in the opposite direction) */
+  }
+}
+
+.form {
+  z-index: 999;
+}
+
+.center {
+  z-index: 999;
+}
